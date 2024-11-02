@@ -22,7 +22,7 @@
 }
 .mywork-container {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap:40px;
 }
 .mywork-container img {
@@ -30,6 +30,7 @@
   width: 100%;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 12px;
 }
 .mywork-container img:hover {
   transform: scale(1.05);

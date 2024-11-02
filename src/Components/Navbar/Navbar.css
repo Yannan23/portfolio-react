@@ -36,7 +36,7 @@
   text-decoration: none;
   color: white;
 }
-.nav-mob-open {
+.nav-mob-open, .nav-mob-close{
   display: none;
 }
 @media(max-width: 768px) {

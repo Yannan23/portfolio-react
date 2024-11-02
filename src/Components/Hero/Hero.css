@@ -4,8 +4,31 @@
   flex-direction: column;
   gap: 35px;
 }
-.hero img {
+/* .hero img {
   margin-top: 30px;
+  width: 240px;
+  height: 240px;
+} */
+.hero-img {
+  margin-top: 30px;
+  width: 240px;
+  height: 240px;
+  background: url(../../assets//about_me.svg);
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%); */
+  animation: profile_animate 8s ease-in-out infinite 1s;
+}
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 .hero h1 {
   font-size: 65px;
@@ -51,6 +74,10 @@
 }
 .hero-resume:hover {
   border-color: #B415FF;
+}
+.hero-resume-link {
+  text-decoration: none;
+  color: #FFF;
 }
 @media(max-width: 768px) {
   .hero img {
